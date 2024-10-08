@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="infopage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://httpbin.org/anything" method="post">
+        <h1>Registrera dig:</h1>
+        <div class="names">
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" required /><br />
+          <br />
+          <label for="lname">Last name: </label><br />
+          <input type="text" id="lname" name="lname" required /><br />
+        </div>
+        <div class="login">
+          <label for="uname">Username: </label><br />
+          <input type="text" id="uname" name="uname" required /><br />
+          <br />
+          <label for="pword">Password: </label><br />
+          <input type="password" id="pword" name="pword" required /><br />
+        </div>
+        <div class="email">
+          <label for="email">Email: </label><br />
+          <input type="email" id="email" name="email" required /><br />
+        </div>
+        <div class="favcat">
+          <label for="breed">Favorite breed:</label><br />
+          <select name="breed:" id="breed" required>
+            <option value="">Please choose a breed</option>
+            <option value="ragdoll">Ragdoll</option>
+            <option value="devonrex">Devon rex</option>
+            <option value="persian">Persian</option>
+            <option value="scottishfold">Scottish fold</option>
+          </select>
+        </div>
+        <div class="terms">
+          <label for="terms"> I agree to the terms & conditions</label>
+          <input type="checkbox" name="terms" required />
+        </div>
+        <div>
+          <button type="submit">Bli medlem</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

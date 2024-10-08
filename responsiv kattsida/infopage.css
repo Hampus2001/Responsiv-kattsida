@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 26px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  border-radius: 5px;
+  border: solid #ddd 1px;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  padding: 80px;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 20px;
+}
+input,
+select {
+  width: 200px;
+  box-sizing: border-box;
+}
+button {
+  height: 40px;
+  width: 100px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+.terms {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  .container {
+    width: 900px;
+  }
+  input,
+  select {
+    width: 400px;
+    padding: 5px;
+  }
+}
